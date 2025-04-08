@@ -9,7 +9,7 @@ import Foundation
 
 // This struct represents a single flashcard in the app.
 // It conforms to Identifiable so SwiftUI can loop over lists of flashcards easily.
-struct Flashcard: Identifiable {
+struct Flashcard: Identifiable, Codable {
     
     // A unique ID for the flashcard, used by SwiftUI for rendering lists
     let id: UUID

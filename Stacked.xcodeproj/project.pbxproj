@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		87811A2D2DA588910067B5A8 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A74B2DA57A70000F8A60 /* Flashcard.swift */; };
+		87811A2E2DA588910067B5A8 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A74D2DA57CDB000F8A60 /* FlashcardViewModel.swift */; };
+		87811A2F2DA588910067B5A8 /* StackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A74F2DA581A7000F8A60 /* StackCardView.swift */; };
+		87811A302DA588910067B5A8 /* StackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A74E2DA5813C000F8A60 /* StackListView.swift */; };
+		87811A312DA588910067B5A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A7462DA579A2000F8A60 /* ContentView.swift */; };
+		87811A322DA588910067B5A8 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A7452DA579A2000F8A60 /* Assets.xcassets */; };
+		87811A332DA588910067B5A8 /* StackedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A7472DA579A2000F8A60 /* StackedApp.swift */; };
+		87811A342DA588960067B5A8 /* FlashcardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A74C2DA57C0F000F8A60 /* FlashcardStack.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		87A1A7272DA57018000F8A60 /* Stacked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87811A342DA588960067B5A8 /* FlashcardStack.swift in Sources */,
+				87811A2D2DA588910067B5A8 /* Flashcard.swift in Sources */,
+				87811A2E2DA588910067B5A8 /* FlashcardViewModel.swift in Sources */,
+				87811A2F2DA588910067B5A8 /* StackCardView.swift in Sources */,
+				87811A302DA588910067B5A8 /* StackListView.swift in Sources */,
+				87811A312DA588910067B5A8 /* ContentView.swift in Sources */,
+				87811A322DA588910067B5A8 /* Assets.xcassets in Sources */,
+				87811A332DA588910067B5A8 /* StackedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
