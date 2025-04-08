@@ -19,7 +19,7 @@ struct MainTabView: View {
                 case 0:
                     StackListView(viewModel: viewModel)
                 case 1:
-                    Text("Design & Edit View (Coming Soon)")
+                    DesignEditHomeView(viewModel: viewModel)
                 case 2:
                     Text("TBD Feature View")
                 case 3:

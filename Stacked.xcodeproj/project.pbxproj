@@ -18,12 +18,21 @@
 		87811A362DA58F1C0067B5A8 /* StackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A352DA58F120067B5A8 /* StackDetailView.swift */; };
 		87811A382DA59AE90067B5A8 /* StackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A372DA59AE40067B5A8 /* StackManager.swift */; };
 		87811A3A2DA59F630067B5A8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A392DA59F5D0067B5A8 /* MainTabView.swift */; };
+		87811A3C2DA5A2330067B5A8 /* DesignEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A3B2DA5A22B0067B5A8 /* DesignEditView.swift */; };
+		87811A3E2DA5A3960067B5A8 /* CodableColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A3D2DA5A38F0067B5A8 /* CodableColor.swift */; };
+		87811A402DA5B0B40067B5A8 /* DesignEditHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */; };
+		87811A432DA5EDB00067B5A8 /* FlashcardEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87811A352DA58F120067B5A8 /* StackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDetailView.swift; sourceTree = "<group>"; };
 		87811A372DA59AE40067B5A8 /* StackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackManager.swift; sourceTree = "<group>"; };
 		87811A392DA59F5D0067B5A8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		87811A3B2DA5A22B0067B5A8 /* DesignEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignEditView.swift; sourceTree = "<group>"; };
+		87811A3D2DA5A38F0067B5A8 /* CodableColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColor.swift; sourceTree = "<group>"; };
+		87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignEditHomeView.swift; sourceTree = "<group>"; };
+		87811A412DA5B4100067B5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardEditorView.swift; sourceTree = "<group>"; };
 		87A1A7272DA57018000F8A60 /* Stacked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +99,9 @@
 		87A1A7442DA579A2000F8A60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */,
+				87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */,
+				87811A3B2DA5A22B0067B5A8 /* DesignEditView.swift */,
 				87811A392DA59F5D0067B5A8 /* MainTabView.swift */,
 				87811A352DA58F120067B5A8 /* StackDetailView.swift */,
 				87A1A74F2DA581A7000F8A60 /* StackCardView.swift */,
@@ -102,6 +114,7 @@
 		87A1A7482DA579A2000F8A60 /* Stacked */ = {
 			isa = PBXGroup;
 			children = (
+				87811A412DA5B4100067B5A8 /* Info.plist */,
 				87A1A74A2DA579E4000F8A60 /* Utilities */,
 				87A1A7492DA579DC000F8A60 /* Resources */,
 				87A1A7412DA579A2000F8A60 /* Managers */,
@@ -124,6 +137,7 @@
 		87A1A74A2DA579E4000F8A60 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				87811A3D2DA5A38F0067B5A8 /* CodableColor.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -200,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87811A342DA588960067B5A8 /* FlashcardStack.swift in Sources */,
+				87811A3E2DA5A3960067B5A8 /* CodableColor.swift in Sources */,
 				87811A2D2DA588910067B5A8 /* Flashcard.swift in Sources */,
 				87811A2E2DA588910067B5A8 /* FlashcardViewModel.swift in Sources */,
 				87811A2F2DA588910067B5A8 /* StackCardView.swift in Sources */,
@@ -209,7 +224,10 @@
 				87811A362DA58F1C0067B5A8 /* StackDetailView.swift in Sources */,
 				87811A312DA588910067B5A8 /* ContentView.swift in Sources */,
 				87811A322DA588910067B5A8 /* Assets.xcassets in Sources */,
+				87811A402DA5B0B40067B5A8 /* DesignEditHomeView.swift in Sources */,
+				87811A3C2DA5A2330067B5A8 /* DesignEditView.swift in Sources */,
 				87811A332DA588910067B5A8 /* StackedApp.swift in Sources */,
+				87811A432DA5EDB00067B5A8 /* FlashcardEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +365,8 @@
 				DEVELOPMENT_TEAM = YV56753Y7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stacked/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -375,6 +395,8 @@
 				DEVELOPMENT_TEAM = YV56753Y7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stacked/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

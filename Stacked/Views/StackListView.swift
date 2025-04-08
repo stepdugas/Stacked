@@ -37,7 +37,10 @@ struct StackListView: View {
                                         viewModel.selectStack(at: index)
                                     },
                                 label: {
-                                    StackCardView(title: stack.title)
+                                    StackCardView(
+                                        title: stack.title,
+                                        color: stack.color?.color ?? .blue
+                                    )
                                 }
                             )
                         }
@@ -75,3 +78,4 @@ struct StackListView: View {
         }
     }
 }
+    
