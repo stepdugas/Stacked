@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world! HI")
-        }
-        .padding()
-    }
-}
+    // This creates a single instance of your ViewModel that lasts for the whole view hierarchy
+    @StateObject var viewModel = FlashcardViewModel()
 
-#Preview {
-    ContentView()
+    var body: some View {
+        // Pass the ViewModel into your stack list screen
+        StackListView(viewModel: viewModel)
+    }
 }
