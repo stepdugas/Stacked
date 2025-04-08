@@ -12,6 +12,8 @@
 		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87A1A7472DA579A2000F8A60 /* StackedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedApp.swift; sourceTree = "<group>"; };
 		87A1A74B2DA57A70000F8A60 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		87A1A74C2DA57C0F000F8A60 /* FlashcardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStack.swift; sourceTree = "<group>"; };
+		87A1A74D2DA57CDB000F8A60 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		87A1A7422DA579A2000F8A60 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				87A1A74C2DA57C0F000F8A60 /* FlashcardStack.swift */,
 				87A1A74B2DA57A70000F8A60 /* Flashcard.swift */,
 			);
 			path = Models;
@@ -59,6 +62,7 @@
 		87A1A7432DA579A2000F8A60 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				87A1A74D2DA57CDB000F8A60 /* FlashcardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
