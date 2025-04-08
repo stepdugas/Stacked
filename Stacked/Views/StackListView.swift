@@ -47,15 +47,7 @@ struct StackListView: View {
 
                 Spacer()
 
-                // Tab bar placeholder
-                HStack(spacing: 30) {
-                    ForEach(0..<4) { _ in
-                        Circle()
-                            .frame(width: 28, height: 28)
-                            .foregroundColor(.gray.opacity(0.4))
-                    }
-                }
-                .padding(.bottom, 16)
+                
             }
             .navigationBarHidden(false) // Show nav bar so we can add toolbar
             .toolbar {

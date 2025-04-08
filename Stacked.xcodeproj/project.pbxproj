@@ -17,11 +17,13 @@
 		87811A342DA588960067B5A8 /* FlashcardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1A74C2DA57C0F000F8A60 /* FlashcardStack.swift */; };
 		87811A362DA58F1C0067B5A8 /* StackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A352DA58F120067B5A8 /* StackDetailView.swift */; };
 		87811A382DA59AE90067B5A8 /* StackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A372DA59AE40067B5A8 /* StackManager.swift */; };
+		87811A3A2DA59F630067B5A8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A392DA59F5D0067B5A8 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87811A352DA58F120067B5A8 /* StackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDetailView.swift; sourceTree = "<group>"; };
 		87811A372DA59AE40067B5A8 /* StackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackManager.swift; sourceTree = "<group>"; };
+		87811A392DA59F5D0067B5A8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		87A1A7272DA57018000F8A60 /* Stacked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		87A1A7442DA579A2000F8A60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87811A392DA59F5D0067B5A8 /* MainTabView.swift */,
 				87811A352DA58F120067B5A8 /* StackDetailView.swift */,
 				87A1A74F2DA581A7000F8A60 /* StackCardView.swift */,
 				87A1A74E2DA5813C000F8A60 /* StackListView.swift */,
@@ -201,6 +204,7 @@
 				87811A2E2DA588910067B5A8 /* FlashcardViewModel.swift in Sources */,
 				87811A2F2DA588910067B5A8 /* StackCardView.swift in Sources */,
 				87811A382DA59AE90067B5A8 /* StackManager.swift in Sources */,
+				87811A3A2DA59F630067B5A8 /* MainTabView.swift in Sources */,
 				87811A302DA588910067B5A8 /* StackListView.swift in Sources */,
 				87811A362DA58F1C0067B5A8 /* StackDetailView.swift in Sources */,
 				87811A312DA588910067B5A8 /* ContentView.swift in Sources */,
