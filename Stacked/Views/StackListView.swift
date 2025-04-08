@@ -6,15 +6,14 @@
 //
 import SwiftUI
 
-// This screen shows a grid of flashcard stacks and your app title at the top.
 struct StackListView: View {
-    // We pass in the ViewModel so this view can display and interact with the flashcard data
     @ObservedObject var viewModel: FlashcardViewModel
+    @State private var showingNewStackPrompt = false
+    @State private var newStackTitle = ""
 
-    // This defines the two-column layout for the stack grid
     private let gridColumns = [
-        GridItem(.flexible()), // column 1
-        GridItem(.flexible())  // column 2
+        GridItem(.flexible()),
+        GridItem(.flexible())
     ]
 
     var body: some View {
@@ -26,17 +25,21 @@ struct StackListView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.top, 24)
-                
-                // Scrollable grid of flashcard stacks
+
+                // Scrollable grid of stacks
                 ScrollView {
                     LazyVGrid(columns: gridColumns, spacing: 20) {
                         ForEach(viewModel.stacks.indices, id: \.self) { index in
                             let stack = viewModel.stacks[index]
-                            StackCardView(title: stack.title)
-                                .onTapGesture {
-                                    viewModel.selectStack(at: index)
-                                    // In the future: navigate to stack detail view
+                            NavigationLink(
+                                destination: StackDetailView(viewModel: viewModel)
+                                    .onAppear {
+                                        viewModel.selectStack(at: index)
+                                    },
+                                label: {
+                                    StackCardView(title: stack.title)
                                 }
+                            )
                         }
                     }
                     .padding()
@@ -44,7 +47,7 @@ struct StackListView: View {
 
                 Spacer()
 
-                // Placeholder: Custom tab bar (drawn as 4 icons)
+                // Tab bar placeholder
                 HStack(spacing: 30) {
                     ForEach(0..<4) { _ in
                         Circle()
@@ -54,7 +57,29 @@ struct StackListView: View {
                 }
                 .padding(.bottom, 16)
             }
-            .navigationBarHidden(true) // Hides default nav bar
+            .navigationBarHidden(false) // Show nav bar so we can add toolbar
+            .toolbar {
+                // "+" button to add a new stack
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showingNewStackPrompt = true
+                    }) {
+                        Image(systemName: "plus")
+                            .font(.title2)
+                    }
+                }
+            }
+            .alert("New Stack", isPresented: $showingNewStackPrompt, actions: {
+                TextField("Stack Title", text: $newStackTitle)
+                Button("Create") {
+                    let newStack = FlashcardStack(title: newStackTitle)
+                    viewModel.stacks.append(newStack)
+                    newStackTitle = ""
+                }
+                Button("Cancel", role: .cancel) {
+                    newStackTitle = ""
+                }
+            })
         }
     }
 }
