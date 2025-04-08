@@ -11,6 +11,7 @@
 		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87A1A7472DA579A2000F8A60 /* StackedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedApp.swift; sourceTree = "<group>"; };
+		87A1A74B2DA57A70000F8A60 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 		87A1A7422DA579A2000F8A60 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				87A1A74B2DA57A70000F8A60 /* Flashcard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
