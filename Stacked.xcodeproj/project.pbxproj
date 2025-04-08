@@ -8,15 +8,10 @@
 
 /* Begin PBXFileReference section */
 		87A1A7272DA57018000F8A60 /* Stacked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacked.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		87A1A7472DA579A2000F8A60 /* StackedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		87A1A7292DA57018000F8A60 /* Stacked */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Stacked;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		87A1A7242DA57018000F8A60 /* Frameworks */ = {
@@ -32,7 +27,7 @@
 		87A1A71E2DA57018000F8A60 = {
 			isa = PBXGroup;
 			children = (
-				87A1A7292DA57018000F8A60 /* Stacked */,
+				87A1A7482DA579A2000F8A60 /* Stacked */,
 				87A1A7282DA57018000F8A60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +38,64 @@
 				87A1A7272DA57018000F8A60 /* Stacked.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		87A1A7412DA579A2000F8A60 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		87A1A7422DA579A2000F8A60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		87A1A7432DA579A2000F8A60 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		87A1A7442DA579A2000F8A60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87A1A7462DA579A2000F8A60 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87A1A7482DA579A2000F8A60 /* Stacked */ = {
+			isa = PBXGroup;
+			children = (
+				87A1A74A2DA579E4000F8A60 /* Utilities */,
+				87A1A7492DA579DC000F8A60 /* Resources */,
+				87A1A7412DA579A2000F8A60 /* Managers */,
+				87A1A7422DA579A2000F8A60 /* Models */,
+				87A1A7432DA579A2000F8A60 /* ViewModels */,
+				87A1A7442DA579A2000F8A60 /* Views */,
+				87A1A7452DA579A2000F8A60 /* Assets.xcassets */,
+				87A1A7472DA579A2000F8A60 /* StackedApp.swift */,
+			);
+			path = Stacked;
+			sourceTree = "<group>";
+		};
+		87A1A7492DA579DC000F8A60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87A1A74A2DA579E4000F8A60 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +112,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				87A1A7292DA57018000F8A60 /* Stacked */,
 			);
 			name = Stacked;
 			packageProductDependencies = (
