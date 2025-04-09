@@ -23,7 +23,7 @@ struct MainTabView: View {
                 case 2:
                     Text("TBD Feature View")
                 case 3:
-                    SettingsView()
+                    SettingsView(viewModel: viewModel)
                 default:
                     Text("Unknown Tab")
                 }

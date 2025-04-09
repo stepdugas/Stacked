@@ -23,6 +23,7 @@
 		87811A402DA5B0B40067B5A8 /* DesignEditHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */; };
 		87811A432DA5EDB00067B5A8 /* FlashcardEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */; };
 		87811A452DA5F6950067B5A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A442DA5F6900067B5A8 /* SettingsView.swift */; };
+		87811A472DA5FA9B0067B5A8 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A462DA5FA910067B5A8 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		87811A412DA5B4100067B5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardEditorView.swift; sourceTree = "<group>"; };
 		87811A442DA5F6900067B5A8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		87811A462DA5FA910067B5A8 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		87A1A7272DA57018000F8A60 /* Stacked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		87A1A7412DA579A2000F8A60 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				87811A462DA5FA910067B5A8 /* NotificationManager.swift */,
 				87811A372DA59AE40067B5A8 /* StackManager.swift */,
 			);
 			path = Managers;
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87811A342DA588960067B5A8 /* FlashcardStack.swift in Sources */,
+				87811A472DA5FA9B0067B5A8 /* NotificationManager.swift in Sources */,
 				87811A3E2DA5A3960067B5A8 /* CodableColor.swift in Sources */,
 				87811A2D2DA588910067B5A8 /* Flashcard.swift in Sources */,
 				87811A2E2DA588910067B5A8 /* FlashcardViewModel.swift in Sources */,

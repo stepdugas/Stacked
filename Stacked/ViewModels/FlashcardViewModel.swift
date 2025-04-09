@@ -95,4 +95,8 @@ class FlashcardViewModel: ObservableObject {
     private func loadStacks() {
         stacks = stackManager.load()
     }
+    func resetAllStacks() {
+        stacks.removeAll()
+        // Save to disk if you're persisting data
+    }
 }
