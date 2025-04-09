@@ -22,6 +22,7 @@
 		87811A3E2DA5A3960067B5A8 /* CodableColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A3D2DA5A38F0067B5A8 /* CodableColor.swift */; };
 		87811A402DA5B0B40067B5A8 /* DesignEditHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */; };
 		87811A432DA5EDB00067B5A8 /* FlashcardEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */; };
+		87811A452DA5F6950067B5A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A442DA5F6900067B5A8 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignEditHomeView.swift; sourceTree = "<group>"; };
 		87811A412DA5B4100067B5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardEditorView.swift; sourceTree = "<group>"; };
+		87811A442DA5F6900067B5A8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		87A1A7272DA57018000F8A60 /* Stacked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A1A7452DA579A2000F8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1A7462DA579A2000F8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		87A1A7442DA579A2000F8A60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87811A442DA5F6900067B5A8 /* SettingsView.swift */,
 				87811A422DA5EDA70067B5A8 /* FlashcardEditorView.swift */,
 				87811A3F2DA5B0AE0067B5A8 /* DesignEditHomeView.swift */,
 				87811A3B2DA5A22B0067B5A8 /* DesignEditView.swift */,
@@ -222,6 +225,7 @@
 				87811A3A2DA59F630067B5A8 /* MainTabView.swift in Sources */,
 				87811A302DA588910067B5A8 /* StackListView.swift in Sources */,
 				87811A362DA58F1C0067B5A8 /* StackDetailView.swift in Sources */,
+				87811A452DA5F6950067B5A8 /* SettingsView.swift in Sources */,
 				87811A312DA588910067B5A8 /* ContentView.swift in Sources */,
 				87811A322DA588910067B5A8 /* Assets.xcassets in Sources */,
 				87811A402DA5B0B40067B5A8 /* DesignEditHomeView.swift in Sources */,
