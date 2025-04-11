@@ -10,6 +10,7 @@ struct StackListView: View {
     @ObservedObject var viewModel: FlashcardViewModel
     @State private var showingNewStackPrompt = false
     @State private var newStackTitle = ""
+    @State private var showTitle = false
 
     private let gridColumns = [
         GridItem(.flexible()),
@@ -21,10 +22,23 @@ struct StackListView: View {
             VStack(spacing: 0) {
                 
                 // App Title
+                
                 Text("Stacked")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.top, 24)
+                                       .font(.system(size: 42, weight: .bold, design: .rounded))
+                                       .foregroundStyle(
+                                           LinearGradient(
+                                               colors: [Color.purple, Color.blue],
+                                               startPoint: .leading,
+                                               endPoint: .trailing
+                                           )
+                                       )
+                                       .shadow(color: .black.opacity(0.25), radius: 4, x: 1, y: 2)
+                                       .opacity(showTitle ? 1 : 0)
+                                       .onAppear {
+                                           withAnimation(.easeOut(duration: 2.0)) {
+                                               showTitle = true
+                                           }
+                                       }
 
                 // Scrollable grid of stacks
                 ScrollView {
