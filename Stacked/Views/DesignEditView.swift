@@ -15,15 +15,6 @@ struct DesignEditView: View {
     @State private var newTitle: String = ""
     @State private var selectedStackIndex: Int
 
-    // Pastel color palette options
-    let pastelColors: [Color] = [
-        Color(red: 1.0, green: 0.8, blue: 0.9), // pink
-        Color(red: 1.0, green: 1.0, blue: 0.8), // yellow
-        Color(red: 0.8, green: 1.0, blue: 0.8), // green
-        Color(red: 0.8, green: 0.9, blue: 1.0), // blue
-        Color(red: 1.0, green: 0.9, blue: 0.8)  // orange
-    ]
-
     init(viewModel: FlashcardViewModel, initialStackIndex: Int) {
         self.viewModel = viewModel
         self.initialStackIndex = initialStackIndex
@@ -59,24 +50,33 @@ struct DesignEditView: View {
 
                 Divider().background(Color.white)
 
-                // Color Picker
+                // Color Theme Picker
                 Text("Choose a Stack Color")
                     .font(.headline)
                     .foregroundColor(.white)
 
-                HStack {
-                    ForEach(pastelColors, id: \.self) { color in
-                        Circle()
-                            .fill(color)
-                            .frame(width: 40, height: 40)
-                            .overlay(
+                ForEach(colorPacks) { pack in
+                    VStack(alignment: .leading) {
+                        Text(pack.name)
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+
+                        HStack {
+                            ForEach(pack.colors, id: \.self) { color in
                                 Circle()
-                                    .stroke(Color.white.opacity(selectedColor == color ? 0.8 : 0), lineWidth: 3)
-                            )
-                            .onTapGesture {
-                                selectedColor = color
+                                    .fill(color)
+                                    .frame(width: 40, height: 40)
+                                    .overlay(
+                                        Circle()
+                                            .stroke(Color.white.opacity(selectedColor == color ? 0.8 : 0), lineWidth: 3)
+                                    )
+                                    .onTapGesture {
+                                        selectedColor = color
+                                    }
                             }
+                        }
                     }
+                    .padding(.bottom, 5)
                 }
 
                 Divider().background(Color.white)

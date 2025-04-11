@@ -25,6 +25,8 @@
 		87811A452DA5F6950067B5A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A442DA5F6900067B5A8 /* SettingsView.swift */; };
 		87811A472DA5FA9B0067B5A8 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87811A462DA5FA910067B5A8 /* NotificationManager.swift */; };
 		87D3FC812DA954500002D4DF /* InstructionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3FC802DA954480002D4DF /* InstructionCardView.swift */; };
+		87D3FC832DA968E70002D4DF /* ColorPacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3FC822DA968E40002D4DF /* ColorPacks.swift */; };
+		87D3FC852DA969510002D4DF /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D3FC842DA9694C0002D4DF /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		87A1A74E2DA5813C000F8A60 /* StackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackListView.swift; sourceTree = "<group>"; };
 		87A1A74F2DA581A7000F8A60 /* StackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCardView.swift; sourceTree = "<group>"; };
 		87D3FC802DA954480002D4DF /* InstructionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCardView.swift; sourceTree = "<group>"; };
+		87D3FC822DA968E40002D4DF /* ColorPacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPacks.swift; sourceTree = "<group>"; };
+		87D3FC842DA9694C0002D4DF /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		87A1A7422DA579A2000F8A60 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				87D3FC822DA968E40002D4DF /* ColorPacks.swift */,
 				87A1A74C2DA57C0F000F8A60 /* FlashcardStack.swift */,
 				87A1A74B2DA57A70000F8A60 /* Flashcard.swift */,
 			);
@@ -146,6 +151,7 @@
 		87A1A74A2DA579E4000F8A60 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				87D3FC842DA9694C0002D4DF /* Color+Hex.swift */,
 				87811A3D2DA5A38F0067B5A8 /* CodableColor.swift */,
 			);
 			path = Utilities;
@@ -227,11 +233,13 @@
 				87811A3E2DA5A3960067B5A8 /* CodableColor.swift in Sources */,
 				87811A2D2DA588910067B5A8 /* Flashcard.swift in Sources */,
 				87811A2E2DA588910067B5A8 /* FlashcardViewModel.swift in Sources */,
+				87D3FC852DA969510002D4DF /* Color+Hex.swift in Sources */,
 				87811A2F2DA588910067B5A8 /* StackCardView.swift in Sources */,
 				87811A382DA59AE90067B5A8 /* StackManager.swift in Sources */,
 				87811A3A2DA59F630067B5A8 /* MainTabView.swift in Sources */,
 				87811A302DA588910067B5A8 /* StackListView.swift in Sources */,
 				87811A362DA58F1C0067B5A8 /* StackDetailView.swift in Sources */,
+				87D3FC832DA968E70002D4DF /* ColorPacks.swift in Sources */,
 				87811A452DA5F6950067B5A8 /* SettingsView.swift in Sources */,
 				87811A312DA588910067B5A8 /* ContentView.swift in Sources */,
 				87811A322DA588910067B5A8 /* Assets.xcassets in Sources */,

@@ -13,7 +13,7 @@ struct SettingsView: View {
     @AppStorage("showReminders") private var showReminders: Bool = false
     @AppStorage("reminderTime") private var reminderTime: Date = Date()
     @AppStorage("showIntention") private var showIntention: Bool = true
-    @AppStorage("darkMode") private var darkMode: Bool = true
+    
 
     @State private var showingResetAlert = false
 
@@ -39,12 +39,7 @@ struct SettingsView: View {
                     }
                 }
 
-                // MARK: - Preferences
-                Section(header: Text("Preferences")) {
-                  //  Toggle("Show //Intention Screen", //isOn: //$showIntention)
-                    Toggle("Dark Mode", isOn: $darkMode)
-                }
-
+                
                 // MARK: - Premium
                 Section(header: Text("Stacked Pro")) {
                     NavigationLink("Go Premium") {

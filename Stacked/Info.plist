@@ -4,7 +4,6 @@
 <dict>
     <key>CFBundleName</key>
     <string>Stacked</string>
-    <key>UIUserInterfaceStyle</key>
-    <string>Dark</string>
+    
 </dict>
 </plist>

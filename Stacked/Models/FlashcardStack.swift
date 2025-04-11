@@ -11,7 +11,7 @@ struct FlashcardStack: Identifiable, Codable {
     let id: UUID
     var title: String
     var cards: [Flashcard]
-    var color: CodableColor? = nil
+    var color: CodableColor? 
 
     init(id: UUID = UUID(), title: String, cards: [Flashcard] = [], color: CodableColor? = nil) {
         self.id = id
