@@ -21,7 +21,8 @@ struct MainTabView: View {
                 case 1:
                     DesignEditHomeView(viewModel: viewModel)
                 case 2:
-                    Text("TBD Feature View")
+                    // For now, a placeholder for AI tab
+                    Text("AI Tools Coming Soon ✨")
                 case 3:
                     SettingsView(viewModel: viewModel)
                 default:
@@ -37,7 +38,7 @@ struct MainTabView: View {
                 Spacer()
                 tabBarButton(icon: "paintbrush", index: 1)
                 Spacer()
-                tabBarButton(icon: "questionmark.circle", index: 2)
+                tabBarButton(icon: "sparkles", index: 2) // <-- Updated icon here!
                 Spacer()
                 tabBarButton(icon: "person.circle", index: 3)
                 Spacer()
@@ -53,11 +54,16 @@ struct MainTabView: View {
         Button(action: {
             selectedTab = index
         }) {
-            Image(systemName: icon)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 24)
-                .foregroundColor(selectedTab == index ? .blue : .gray)
+            VStack(spacing: 4) {
+                Image(systemName: icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 24)
+                    .foregroundColor(selectedTab == index ? .blue : .gray)
+
+                // Optional: Label below icon
+                // Text(label).font(.caption2)
+            }
         }
     }
 }

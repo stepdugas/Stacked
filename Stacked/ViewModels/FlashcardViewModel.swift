@@ -106,4 +106,12 @@ class FlashcardViewModel: ObservableObject {
     func goToFirstCard() {
         currentCardIndex = 0
     }
+    func goToPreviousCard() {
+        guard let stack = currentStack else { return }
+        if currentCardIndex > 0 {
+            currentCardIndex -= 1
+        } else {
+            currentCardIndex = stack.cards.count - 1 // Loop back to last card
+        }
+    }
 }

@@ -20,16 +20,16 @@ struct StackDetailView: View {
 
             // Flashcard container
             ZStack {
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.orange.opacity(0.3))
-                    .frame(height: 250)
-                    .padding()
-
                 if viewModel.currentStack?.cards.isEmpty == true {
                     InstructionCardView()
                         .frame(height: 250)
                         .padding()
                 } else {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.orange.opacity(0.3))
+                        .frame(height: 250)
+                        .padding()
+
                     // Front text
                     Text(viewModel.currentFlashcard?.front ?? "")
                         .font(.title2)
@@ -48,6 +48,24 @@ struct StackDetailView: View {
                 }
             }
             .animation(.easeInOut, value: isFlipped)
+            .gesture(
+                DragGesture()
+                    .onEnded { value in
+                        let horizontalAmount = value.translation.width
+
+                        withAnimation {
+                            if horizontalAmount < -50 {
+                                // Swipe Left → Previous card
+                                viewModel.goToPreviousCard()
+                                isFlipped = false
+                            } else if horizontalAmount > 50 {
+                                // Swipe Right → Next card
+                                viewModel.goToNextCard()
+                                isFlipped = false
+                            }
+                        }
+                    }
+            )
             .onTapGesture {
                 withAnimation {
                     isFlipped.toggle()
@@ -97,14 +115,13 @@ struct StackDetailView: View {
 
                 Button("Add Card") {
                     let newCard = Flashcard(front: frontText, back: backText)
-                    
+
                     if var stack = viewModel.currentStack {
                         stack.cards.append(newCard)
                         viewModel.stacks[viewModel.selectedStackIndex] = stack
-                        
-                        // Update the current flashcard list
+
                         viewModel.updateCards(for: stack)
-                        viewModel.goToFirstCard() // Optional: go to the first card after adding
+                        viewModel.goToFirstCard()
                     }
 
                     frontText = ""
