@@ -25,11 +25,29 @@ struct StackDetailView: View {
                     .frame(height: 250)
                     .padding()
 
-                Text(isFlipped ? viewModel.currentFlashcard?.back ?? "" : viewModel.currentFlashcard?.front ?? "")
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                if viewModel.currentStack?.cards.isEmpty == true {
+                    InstructionCardView()
+                        .frame(height: 250)
+                        .padding()
+                } else {
+                    // Front text
+                    Text(viewModel.currentFlashcard?.front ?? "")
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .opacity(isFlipped ? 0.0 : 1.0)
+                        .rotation3DEffect(.degrees(isFlipped ? 180 : 0), axis: (x: 0, y: 1, z: 0))
+
+                    // Back text
+                    Text(viewModel.currentFlashcard?.back ?? "")
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .opacity(isFlipped ? 1.0 : 0.0)
+                        .rotation3DEffect(.degrees(isFlipped ? 0 : -180), axis: (x: 0, y: 1, z: 0))
+                }
             }
+            .animation(.easeInOut, value: isFlipped)
             .onTapGesture {
                 withAnimation {
                     isFlipped.toggle()
@@ -79,10 +97,16 @@ struct StackDetailView: View {
 
                 Button("Add Card") {
                     let newCard = Flashcard(front: frontText, back: backText)
+                    
                     if var stack = viewModel.currentStack {
                         stack.cards.append(newCard)
                         viewModel.stacks[viewModel.selectedStackIndex] = stack
+                        
+                        // Update the current flashcard list
+                        viewModel.updateCards(for: stack)
+                        viewModel.goToFirstCard() // Optional: go to the first card after adding
                     }
+
                     frontText = ""
                     backText = ""
                     showingAddCardSheet = false

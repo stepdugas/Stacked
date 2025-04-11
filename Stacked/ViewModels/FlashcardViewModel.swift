@@ -20,6 +20,7 @@ class FlashcardViewModel: ObservableObject {
     
     @Published var selectedStackIndex: Int = 0
     @Published var currentCardIndex: Int = 0
+    @Published var cards: [Flashcard] = []
     
     private let stackManager = StackManager()
 
@@ -98,5 +99,11 @@ class FlashcardViewModel: ObservableObject {
     func resetAllStacks() {
         stacks.removeAll()
         // Save to disk if you're persisting data
+    }
+    func updateCards(for stack: FlashcardStack) {
+        self.cards = stack.cards
+    }
+    func goToFirstCard() {
+        currentCardIndex = 0
     }
 }
